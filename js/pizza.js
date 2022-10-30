@@ -60,8 +60,11 @@ function renderPizzaList(pizzas){
     const content = document.getElementById('content');
     content.innerHTML = '';
     let lastDate = new Date(0).toLocaleDateString('pl');
+    if (!pizzas.length){
+        document.getElementById('add_message_id').style.display = 'inline'
+    }
     pizzas.forEach((pizza) => {
-        const pizzaDate = new Date(pizza.datetime).toLocaleDateString('pl')
+        const pizzaDate = new Date(pizza.datetime).toLocaleDateString('pl');
         if (pizzaDate !== lastDate){
             const dateElem = createDateTimeLineElem(pizzaDate);
             lastDate = pizzaDate;
