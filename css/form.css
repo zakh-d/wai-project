@@ -1,0 +1,68 @@
+.form {
+    width: 40vw;
+    margin: 25px auto;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 3px solid var(--black);
+    padding: 10px 5px;
+    outline: none;
+    font-size: 1em;
+}
+
+.form-control:focus {
+    border-color: var(--blue);
+}
+
+.form-field label{
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+.form-field:focus-within label {
+    color: var(--blue);
+}
+
+.emojis-block-item{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.emojis-block-item label {
+    filter: grayscale(1);
+}
+
+.emojis-block-item:nth-child(2){
+    margin: 10px 15px;
+}
+
+.emojis-block-item input:checked + label {
+    filter: grayscale(0);
+}
+
+.emojis-block-item input{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .form {
+        width: 90vw;
+    }
+
+    .emojis-block-item{
+        font-size: 40px;
+    }
+
+    .emojis-block {
+        display: flex;
+        justify-content: space-around;
+    }
+}

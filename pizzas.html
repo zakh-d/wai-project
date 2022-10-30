@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Eating Pizza</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/pizza-timeline.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <script src="./js/data.js"></script>
+    
+    <!-- jQuery / jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="font-robotic text-center">Eating <span class="color-red">Pizza</span></h2>
+        <nav>
+            <ul class="navigation">
+                <li class="navigation-item"><a class="navigation-item-link" href="./index.html">Home</a></li>
+                <li class="navigation-item"><a class="navigation-item-link active" href="./pizzas.html">Pizzas</a></li>
+                <li class="navigation-item"><a class="navigation-item-link" href="./gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="content" class="container timeline">
+
+        </div>
+        <div id="dialog_form_id" title="Edit Record" style="display: none;">
+            <form class="form" id="pizza_form_id" method="post">
+                <input type="hidden" name="datetime">
+                <div class="form-field">
+                    <label for="pizza_input_id">Pizza Type:</label>
+                    <input type="text" class="form-control" placeholder="eg. Marherita" name="type" id="pizza_input_id"
+                        required>
+                </div>
+                <div class="form-field">
+                    <label for="taste_select_id">What was it like?</label>
+                    <select id="taste_select_id" class="form-control" name="taste" required>
+                        <option value="" selected disabled>-------</option>
+                        <option value="1">It was amazing</option>
+                        <option value="2">Like avarage</option>
+                        <option value="3">It was awful</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Choose your mood after this pizza:</label>
+                    <div class="emojis-block">
+                        <div class="emojis-block-item">
+                            <input type="radio" value="1" name="mood" id="mood-radio-1">
+                            <label for="mood-radio-1">&#x1F603;</label>
+                        </div>
+                        <div class="emojis-block-item">
+                            <input type="radio" value="2" name="mood" id="mood-radio-2">
+                            <label for="mood-radio-2">&#x1F610;</label>
+                        </div>
+                        <div class="emojis-block-item">
+                            <input type="radio" value="3" name="mood" id="mood-radio-3">
+                            <label for="mood-radio-3">&#x1F621;</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <noscript>
+            <div class="container">
+                <h2 class="font-robotic">This is preview of how page can look like</h2>
+                <h3 class="font-robotic">Enable JS to make use of it</h3>
+                <div class="timeline">
+                    <div class="timeline-date-item font-robotic">19.10.2022</div>
+                    <div class="timeline-item">
+                        <h3>Pizza1</h3><span class="rate">★★☆</span><span>😃</span>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Pizza2</h3><span class="rate">★★☆</span><span>😃</span>
+                    </div>
+                    <div class="timeline-date-item font-robotic">20.10.2022</div>
+                    <div class="timeline-item">
+                        <h3>Pizza3</h3><span class="rate">★★★</span><span>😡</span>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Pizza4</h3><span class="rate">★★☆</span><span>😐</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </noscript>
+    </main>
+
+
+    <a href="#top" id="scroll_top_id">^</a>
+
+
+    <footer class="footer mt-3">
+        <div>
+            <p>Created as project on WAI/HiH subjects</p>
+            <p>&copy; Copyright 2022</p>
+        </div>
+        <img src="./images/pg_logo.jpeg" alt="PG Logo">
+    </footer>
+
+    <script src="./js/pizza.js"></script>
+    <script src="./js/scroll_top.js"></script>
+
+</body>
+
+</html>
