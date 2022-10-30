@@ -28,7 +28,6 @@ function createPizzaTimeLineElem(pizza){
     heading.setAttribute('title', 'Double click to edit')
     heading.innerText = pizza.type;
     heading.addEventListener('dblclick', doubleClickHabdlerCreator(pizza));
-    $(heading).bind('taphold', doubleClickHabdlerCreator(pizza));
 
     const rate = document.createElement('span');
     rate.classList.add('rate')
