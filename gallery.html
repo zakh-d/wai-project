@@ -16,25 +16,34 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/gallery.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 
     <title>Gallery</title>
-
-    <script src="./js/auth.js"></script>
-
 </head>
 
 <body>
     <header class="header">
         <h2 class="font-robotic text-center">Eating <span class="color-red">Pizza</span></h2>
-        <nav>
-            <ul class="navigation">
-                <li class="navigation-item"><a class="navigation-item-link" href="./index.html">Home</a></li>
-                <li class="navigation-item"><a class="navigation-item-link" href="./pizzas.html">Pizzas</a></li>
-                <li class="navigation-item"><a class="navigation-item-link active" href="./gallery.html">Gallery</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="d-flex">
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation-item"><a class="navigation-item-link" href="./index.html">Home</a></li>
+                    <li class="navigation-item"><a class="navigation-item-link" href="./pizzas.html">Pizzas</a></li>
+                    <li class="navigation-item"><a class="navigation-item-link active" href="./gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="my-1 mx-2 flex-end">
+                <input type="checkbox" class="dark_mode_checkbox" id="dark_mode_checkbox"/>
+                <label for="dark_mode_checkbox" class="label">
+                    <i class="fas fa-moon"></i>
+                    <i class='fas fa-sun'></i>
+                    <div class='ball'></div>
+                </label>
+            </div>
+        </div>
     </header>
 
 
@@ -72,6 +81,9 @@
         </div>
         <img src="./images/pg_logo.jpeg" alt="PG Logo">
     </footer>
+
+    <script src="./js/dark-mode.js"></script>
+
 </body>
 
 </html>

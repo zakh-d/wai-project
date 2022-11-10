@@ -8,6 +8,7 @@ body {
     --light: #ffffff;
 
     background-color: var(--light);
+    transition: 0.2s linear;
 }
 
 body.dark {
@@ -51,15 +52,42 @@ body.dark {
 }
 
 .my-1 {
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .my-2 {
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .my-3 {
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mx-1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mx-2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mx-3{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.d-flex{
+    display: flex;
+    align-content: center;
+}
+
+.flex-end {
+    align-self: end;
 }
 
 .color-red {
@@ -153,4 +181,8 @@ a[href="#top"]{
     .container {
         max-width: 90vw;
     }
+    .d-flex{
+        flex-direction: column;
+    }
 }
+
