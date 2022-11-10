@@ -1,12 +1,10 @@
 function handleFormSubmit(e){
-    e.preventDefault();
     const type = e.target.type.value;
     const taste = e.target.taste.value;
     const mood = e.target.mood.value;
     const pizza = pizzaObjectCreator(type, taste, mood);
     appendPizzaToLocalStorage(pizza);
-    e.target.submit();
-
+    return true;
 }
 
 document.addEventListener('DOMContentLoaded', function(){
