@@ -18,6 +18,7 @@
   font-size: 1.5em;
   margin: 5px 0;
   padding-left: 40px;
+  color: var(--dark);
 }
 
 .timeline-item h3 {
@@ -43,6 +44,7 @@
   font-size: 2em;
   margin: 20px 0;
   text-decoration: underline 5px;
+  color: var(--dark);
 }
 
 .timeline-date-item::after {

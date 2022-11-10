@@ -1,8 +1,18 @@
-:root {
+body {
     --white: #ffffff;
     --black: #252526;
     --blue: #4957ed;
     --red: #ee2935;
+
+    --dark: #252526;
+    --light: #ffffff;
+
+    background-color: var(--light);
+}
+
+body.dark {
+    --light: #252526;
+    --dark: #ffffff;
 }
 
 * {
@@ -66,6 +76,14 @@
 
 .color-white {
     color: var(--white);
+}
+
+.color-dark {
+    color: var(--dark);
+}
+
+.color-light {
+    color: var(--light)
 }
 
 .font-robotic {

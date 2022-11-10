@@ -3,6 +3,7 @@
     justify-content: space-between;
     padding: 5px 15px;
     line-height: 40px;
+    color: var(--dark);
 }
 
 .navigation {
@@ -15,7 +16,7 @@
     font-family: 'Silkscreen', cursive;
     padding: 10px 20px;
     margin: 0 5px;
-    color: var(--black);
+    color: var(--dark);
     transition: .1s;
 }
 

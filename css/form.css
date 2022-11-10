@@ -11,7 +11,9 @@
 
 .form-control {
     border: none;
-    border-bottom: 3px solid var(--black);
+    border-bottom: 3px solid var(--dark);
+    background-color: transparent;
+    color: var(--dark);
     padding: 10px 5px;
     outline: none;
     font-size: 1em;
@@ -24,6 +26,7 @@
 .form-field label{
     font-family: monospace;
     font-size: 1.5em;
+    color: var(--dark);
 }
 
 .form-field:focus-within label {
