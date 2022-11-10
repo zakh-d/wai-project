@@ -20,18 +20,20 @@
 
 .image-contain {
     max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 #landing {
     padding: 20px;
     display: grid;
-    width: 100vw;
+    width: calc(100vw - 40px);
+    margin: 0 auto;
     grid-template-areas: 
                     "a a d d"
                     "b c d d";
     grid-gap: 10px;
+    justify-items: center;
 }
 
 #text-container > h2 {
